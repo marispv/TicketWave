@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,600&family=Montserrat:wght@100;300&family=PT+Sans&family=Quicksand:wght@300&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*--------------------------------------------PÁGINA INICIAL------------------------------------------------------------*/
+
+/* CABEÇALHO */
+
+.cabecalho{ 
+    display:flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    padding: 0.5vh 1vh;
+}
+
+#inicio-cabecalho{
+    font-weight: bold;
+}
+
+#botao-meus-eventos {
+    color:#B127D9;
+    border-color:#70008f;
+}
+
+svg{
+    margin-bottom: 2.5px;
+    margin-right: 4px;
+}
+
+#botao-meus-eventos:hover, svg:hover{
+    color:white;
+    background-color: #70008f;
+    border-color: white;
+}
+
+
+.menu-navegacao, li{
+    display: inline;
+    margin-left: 24px;
+    cursor:pointer;
+    list-style: none;
+}
+
+li:hover{
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.cadastro-inicio {
+    background-color: #B127D9;
+    color: white;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.login-inicio{
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+/* CARROSSEL DE SLIDES */
+
+.carousel-inner{
+    margin-top: 15px;
+}
+
+/*PRINCIPAIS EVENTOS*/
+
+.eventos{
+    display: flex;
+    margin-top: 18px;
+    justify-content: center;
+    margin-bottom: 40px;
+    background-image: url('../img/fundo1.jpg');
+    padding: 40px 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    
+}
+
+.eventos-titulo{
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.eventos-single{
+    background-color: white;
+    width: 20%;
+    margin-right: 2%;
+    padding:40px 20px;
+    font-size: 20px;
+    cursor:pointer;
+    border-radius: 6px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.eventos-single:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.nome-evento{
+    font-weight: bold;
+}
+
+/*PERFIL ADMINISTRADOR*/
+
+.perfil-admin{
+    background-image: url(../img/Admin2.png);
+    background-size:auto;
+    height: 62vh; 
+    display: flex;
+    border-radius: 70px;
+    margin-left: 3vh;
+    margin-right: 3vh;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.Anuncie{
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+}
+
+.texto-admin{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8vh;
+    text-align: center;
+    margin-left: 7vh;
+}
+
+.Desc-anuncie{
+    margin-top: 5vh;
+    color: white;
+}
+
+.botao-adm{
+    margin-top: 9vh;
+    background-color: #3c004d;
+    color: white;
+    border-radius: 30px;
+    padding: 9px;
+    font-size: 20px;
+    height: fit-content;
+    width: max-content;
+    margin-left: 50vh;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.botao-adm:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+/*RODAPÉ - FOOTER*/
+
+footer {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    background-color: black;
+    color: #fff;
+    padding: 30px 0;
+    margin-top: 15vh;
+    flex-direction: row;
+}
+
+.duvidas{
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-bottom: 1.5vh;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redes{
+    align-items: center;
+    position: relative;
+    margin-bottom: 1.5vh;
+}
+
+/*--------------------------------------------MINHAS RESERVAS-----------------------------------------------------------*/
+
+#botao-meus-eventos2 {
+    color:white;
+    background-color: #70008f;
+    border-color: white;
+}
+
+.titulo-carrinho-ingressos{
+    color:#70008f;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 3.5vh;
+}
+
+.carrinho-ingressos{
+    width:100%;
+    border-collapse: collapse;
+}
+
+
+tr{
+    border-bottom: 0.5px solid #ccc;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    color: #aaa;
+    font-weight: bold;
+}
+
+th{
+    text-align: left;
+    color: black;
+}
+
+/*--------------------------------------------Lista de Eventos----------------------------------------------------------*/
+
+.lista-eventos{
+    text-align: center;
+    margin-top: 4.5vh;
+    margin-bottom: 3.5vh;
+}
+
+.grid-container {
+    background-image: url(../img/fundo1.jpg);
+    text-align: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Define 3 colunas igualmente espaçadas */
+    grid-gap: 10px; /* Espaçamento entre os itens */
+    display:grid;
+    justify-content: center;
+  }
+
+.grid-item{
+    margin-top: 5vh;
+    background-color: white;
+    width: 50vh;
+    height: 35vh;
+    margin-right: 5%;
+    margin-left: 15%;
+    padding:30px 15px;
+    font-size: 20px;
+    cursor:pointer;
+    border-radius: 6px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    align-items: center;
+    margin-bottom: 5vh;
+}
+
+.grid-item:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+#eventos-cabecalho{
+    font-weight: bold;
+}
+
+/*--------------------------------------------Sobre Nós----------------------------------------------------------*/
+
+#sobre-cabecalho{
+    font-weight: bold;
+}
+
+.sobre-nos{
+    text-align: center;
+    margin-top: 4.5vh;
+    margin-bottom: 7vh;
+}
+
+.sobre-titulo{
+    margin-bottom: 3vh;
+}
+
+
+.mvv{
+    text-align: center;
+}
+
+.accordion{
+    width: 100%;
+    
+    margin-top: 7vh;
+    
+}
+
+.accordion-button{
+    background-color: #B127D9;
+    color: white;
+}
+
+.accordion-button:hover{
+    background-color: #B127D9;
+    color: white;
+}
+
+.img-sobre-nos{
+    display: flex;
+    flex-direction: row;
+    margin-left: 25%;
+    margin-right: 25%;
+    justify-content: center;
+    margin-top: 10vh;
+}
+
+.foto-sobre{
+    margin-left: 5px;
+}
+
+/*---------------------------------TELA DO PERFIL ADM--------------------------------------------------------*/
+
